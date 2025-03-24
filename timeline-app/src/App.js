@@ -16,27 +16,39 @@ const timelineData = [
     images: ["img/Chetu1996.jpg"]
   },
   { 
-    date: "11/08/2018", 
+    date: "20/08/2018", 
     event: "Marraige Biodata", 
     icon: <FaHeart size={20} />, 
     images: ["/images/first_date1.jpg", "/images/first_date2.jpg", "/images/first_date3.jpg", "/images/first_date4.jpg"]
   },
   { 
-    date: "14/02/2020", 
-    event: "First Date", 
-    icon: <FaUsers size={20} />, 
+    date: "10/09/2018", 
+    event: "First time meet and marraige fixed", 
+    icon: <FaRing size={20} />, 
     images: ["/images/first_date1.jpg", "/images/first_date2.jpg", "/images/first_date3.jpg", "/images/first_date4.jpg"]
   },
   { 
-    date: "30/03/2022", 
-    event: "Engagement", 
-    icon: <FaRing size={20} />, 
+    date: "19/10/2018", 
+    event: "Gaurav visited Maheshwar", 
+    icon: <FaHeart size={20} />, 
     images: ["/images/engagement1.jpg", "/images/engagement2.jpg", "/images/engagement3.jpg", "/images/engagement4.jpg"]
   },
   { 
-    date: "31/03/2022", 
-    event: "Marriage", 
-    icon: <FaGift size={20} />, 
+    date: "09/11/2018", 
+    event: "Chetali proposed Gaurav", 
+    icon: <FaRing size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "20/01/2019", 
+    event: "Next meet in Maheshwar", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "20/01/2019", 
+    event: "Bhopal trip", 
+    icon: <FaHeart size={20} />, 
     images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
   }
 ];
