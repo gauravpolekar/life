@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/life/timeline-app/static/css/main.79d19d76.css",
-    "main.js": "/life/timeline-app/static/js/main.eb163814.js",
-    "static/js/453.759128cd.chunk.js": "/life/timeline-app/static/js/453.759128cd.chunk.js",
-    "index.html": "/life/timeline-app/index.html",
-    "main.79d19d76.css.map": "/life/timeline-app/static/css/main.79d19d76.css.map",
-    "main.eb163814.js.map": "/life/timeline-app/static/js/main.eb163814.js.map",
-    "453.759128cd.chunk.js.map": "/life/timeline-app/static/js/453.759128cd.chunk.js.map"
+    "main.css": "/life/static/css/main.79d19d76.css",
+    "main.js": "/life/static/js/main.c6833dcc.js",
+    "static/js/453.759128cd.chunk.js": "/life/static/js/453.759128cd.chunk.js",
+    "index.html": "/life/index.html",
+    "main.79d19d76.css.map": "/life/static/css/main.79d19d76.css.map",
+    "main.c6833dcc.js.map": "/life/static/js/main.c6833dcc.js.map",
+    "453.759128cd.chunk.js.map": "/life/static/js/453.759128cd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.79d19d76.css",
-    "static/js/main.eb163814.js"
+    "static/js/main.c6833dcc.js"
   ]
 }
