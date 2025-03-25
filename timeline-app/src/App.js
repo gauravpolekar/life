@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FaCalendarAlt, FaHeart, FaRing, FaGift, FaBaby, FaBabyCarriage, FaUsers } from "react-icons/fa";
+import { FaCalendarAlt, FaHeart, FaRing, FaGift, FaCarAlt, FaBirthdayCake ,FaBaby, FaBabyCarriage, FaUsers, FaBiking, FaPlaneDeparture, FaHome } from "react-icons/fa";
 
 const timelineData = [
   { 
@@ -35,7 +35,7 @@ const timelineData = [
   },
   { 
     date: "09/11/2018", 
-    event: "Chetali proposed Gaurav", 
+    event: "Chetali proposed Gaurav at Chnadwad", 
     icon: <FaRing size={20} />, 
     images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
   },
@@ -49,6 +49,420 @@ const timelineData = [
     date: "20/01/2019", 
     event: "Bhopal trip", 
     icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "16/02/2019", 
+    event: "Pre wedding shoot", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "31/03/2019", 
+    event: "Engahement", 
+    icon: <FaRing size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "31/03/2019", 
+    event: "Got married", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "05/04/2019", 
+    event: "Manali trip", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "20/05/2019", 
+    event: "Gaurav's 27th birthday", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "11/06/2019", 
+    event: "Chetali's 23rd birthday", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "04/08/2019", 
+    event: "Taljai trip", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "17/08/2019", 
+    event: "Mandav trip", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "25/08/2019", 
+    event: "Jejuri trip", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "29/10/2019", 
+    event: "Chandreshwar", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "09/11/2019", 
+    event: "Pune Darshan", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "15/12/2019", 
+    event: "Prvati trip", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "12/01/2020", 
+    event: "Jalgaon", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "13/01/2020", 
+    event: "Post wedding shoot - Maheshwar", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "31/01/2020", 
+    event: "Pandhurna", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "01/02/2020", 
+    event: "Shegaon trip", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "14/04/2020", 
+    event: "Sangamner", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "31/03/2020", 
+    event: "First wedding annivarsary - Lockdown", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "20/05/2020", 
+    event: "Gaurav's 28th birthday", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "11/06/2020", 
+    event: "Chetali's 24th birthday", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "04/11/2020", 
+    event: "Karva chauth", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "13/12/2020", 
+    event: "Maheshwar", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "06/01/2021", 
+    event: "Nashik", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "14/02/2021", 
+    event: "Valentines day", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "31/03/2021", 
+    event: "Second wedding annivarsary", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "06/11/2021", 
+    event: "Pune for Chetali's first job", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "30/11/2021", 
+    event: "Maheshwar", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "09/01/2022", 
+    event: "Alandi trip", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "25/01/2022", 
+    event: "Movie 83", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "14/02/2022", 
+    event: "Pune trip and celebration valentines day", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "31/03/2022", 
+    event: "Third wedding annivarsary at Teera", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "20/05/2022", 
+    event: "Gaurav's 29th birthday", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "11/06/2022", 
+    event: "Chetali's  25th birthday", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "26/07/2022", 
+    event: "Chetali got shining star award", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "11/09/2022", 
+    event: "Maheshwar bhaiyu shadi", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "08/11/2022", 
+    event: "Baby shower", 
+    icon: <FaBabyCarriage size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "30/11/2022", 
+    event: "Upasna baby born", 
+    icon: <FaBaby size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "15/02/2023", 
+    event: "Maheshwar Akshay shadi", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "24/03/2023", 
+    event: "Surat trip", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "31/03/2023", 
+    event: "Fourth wedding annivarsary", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "20/05/2023", 
+    event: "Gaurav's 30th birthday - Maheshwar", 
+    icon: <FaBirthdayCake size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "27/05/2023", 
+    event: "Teritree date", 
+    icon: <FaHeart size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "30/05/2023", 
+    event: "Upasna 6th month birthday", 
+    icon: <FaBaby size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "11/06/2023", 
+    event: "Chetali's 26th birthday ", 
+    icon: <FaBirthdayCake size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "16/06/2023", 
+    event: "Car", 
+    icon: <FaCarAlt size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "11/07/2023", 
+    event: "Krishna photo shoot", 
+    icon: <FaBaby size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "29/07/2023", 
+    event: "Theur trip", 
+    icon: <FaCarAlt size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "24/09/2023", 
+    event: "Ashram visit", 
+    icon: <FaCarAlt size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "02/11/2023", 
+    event: "Karva chauth", 
+    icon: <FaCarAlt size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "12/11/2023", 
+    event: "Diwali", 
+    icon: <FaCarAlt size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "30/11/2023", 
+    event: "Upasna's first birthday", 
+    icon: <FaBaby size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "07/12/2023", 
+    event: "Jignesh shadi - Surat", 
+    icon: <FaGift size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "02/02/2024", 
+    event: "War musium visit", 
+    icon: <FaCarAlt size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "11/02/2024", 
+    event: "Bor nahan", 
+    icon: <FaBaby size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "13/03/2024", 
+    event: "Maheshwar", 
+    icon: <FaCarAlt size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "31/03/2024", 
+    event: "Fifth wedding anniversay Indore", 
+    icon: <FaRing size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "20/05/2024", 
+    event: "Gaurav's 31st birthday", 
+    icon: <FaBirthdayCake size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "11/06/2024", 
+    event: "Chetali's 27th birthday - Chandwad", 
+    icon: <FaBirthdayCake size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "03/08/2024", 
+    event: "Jupiter", 
+    icon: <FaBiking size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "15/08/2024", 
+    event: "Celebration", 
+    icon: <FaGift size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "15/10/2024", 
+    event: "Surprise from Chennai", 
+    icon: <FaPlaneDeparture size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "19/10/2024", 
+    event: "Trip to Narayanpur", 
+    icon: <FaGift size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "20/10/2024", 
+    event: "Karva chauth", 
+    icon: <FaGift size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "01/11/2024", 
+    event: "Diwali", 
+    icon: <FaGift size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "23/11/2024", 
+    event: "Ramdara trip", 
+    icon: <FaBiking size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "13/12/2024", 
+    event: "Maheshwar", 
+    icon: <FaGift size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "22/12/2024", 
+    event: "Sarasbag", 
+    icon: <FaGift size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "20/01/2025", 
+    event: "New house in Pune", 
+    icon: <FaHome size={20} />, 
+    images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
+  },
+  { 
+    date: "02/02/2025", 
+    event: "Maheshwar", 
+    icon: <FaGift size={20} />, 
     images: ["/images/marriage1.jpg", "/images/marriage2.jpg", "/images/marriage3.jpg", "/images/marriage4.jpg"]
   }
 ];
