@@ -57,7 +57,7 @@ const timelineData = [
     date: "16/02/2019", 
     event: "Pre wedding shoot", 
     icon: <FaHandHoldingHeart size={20} />, 
-    images: ["images/preWedding.JPG", "images/preWedding1.JPG", "images/preWedding2.webp", "images/preWedding3.JPG", "images/preWedding4.JPG", "images/preWedding5.JPG" , "images/preWedding6.webp" , 
+    images: ["images/preWedding.jpg", "images/preWedding1.JPG", "images/preWedding2.webp", "images/preWedding3.JPG", "images/preWedding4.JPG", "images/preWedding5.JPG" , "images/preWedding6.webp" , 
     "images/preWedding7.jpg" ]
   },
   { 
@@ -364,7 +364,7 @@ const timelineData = [
     date: "30/11/2023", 
     event: "Upasna's first birthday", 
     icon: <FaBirthdayCake size={20} />, 
-    images: ["images/Uppu1.jpg", "images/Uppu12.jpg", "images/Uppu13.jpg", "images/Uppu14.jpg"]
+    images: ["images/Uppu1.jpg", "images/Uppu12.jpg", "images/Uppu13.jpg", "images/Uppu14.JPG"]
   },
   { 
     date: "07/12/2023", 
@@ -430,7 +430,7 @@ const timelineData = [
     date: "19/10/2024", 
     event: "Trip to Narayanpur", 
     icon: <RiEBikeFill size={20} />, 
-    images: ["images/Narayanpur0.jpg", "images/Narayanpur.jpg", "images/Narayanpur1.jpg", "images/Narayanpur2.jpg",
+    images: ["images/Narayanpur0.webp", "images/Narayanpur.jpg", "images/Narayanpur1.webp", "images/Narayanpur2.jpg",
     "images/Narayanpur3.jpg", "images/Narayanpur4.jpg"]
   },
   { 
