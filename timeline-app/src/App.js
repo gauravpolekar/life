@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FaCalendarAlt, FaHeart, FaRing, FaGift, FaCarAlt, FaBirthdayCake ,FaBaby, FaBabyCarriage, FaUsers, FaBiking, FaPlaneDeparture, FaHome } from "react-icons/fa";
+import { FaCalendarAlt, FaHeart, FaRing, FaGift, FaCarAlt, FaBirthdayCake ,FaBaby, FaBabyCarriage, FaUsers, FaBiking, FaPlaneDeparture, FaHome, FaHollyBerry, FaBath } from "react-icons/fa";
+import { GiMeditation, GiTank } from "react-icons/gi";
+import { RiEBikeFill } from "react-icons/ri";
 
 const timelineData = [
   { 
@@ -341,134 +343,141 @@ const timelineData = [
   { 
     date: "24/09/2023", 
     event: "Ashram visit", 
-    icon: <FaCarAlt size={20} />, 
-    images: ["images/marriage1.jpg", "images/marriage2.jpg", "images/marriage3.jpg", "images/marriage4.jpg"]
+    icon: <GiMeditation size={20} />, 
+    images: ["images/ashram1.jpg", "images/ashram.jpg", "images/ashram.jpg"]
   },
   { 
     date: "02/11/2023", 
     event: "Karva chauth", 
-    icon: <FaCarAlt size={20} />, 
-    images: ["images/marriage1.jpg", "images/marriage2.jpg", "images/marriage3.jpg", "images/marriage4.jpg"]
+    icon: <FaHollyBerry size={20} />, 
+    images: ["images/karva23.jpg", "images/karva231.jpg"]
   },
   { 
     date: "12/11/2023", 
     event: "Diwali", 
     icon: <FaCarAlt size={20} />, 
-    images: ["images/marriage1.jpg", "images/marriage2.jpg", "images/marriage3.jpg", "images/marriage4.jpg"]
+    images: ["images/diwali23.jpg"]
   },
   { 
     date: "30/11/2023", 
     event: "Upasna's first birthday", 
     icon: <FaBaby size={20} />, 
-    images: ["images/marriage1.jpg", "images/marriage2.jpg", "images/marriage3.jpg", "images/marriage4.jpg"]
+    images: ["images/Uppu1.jpg", "images/Uppu12.jpg", "images/Uppu13.jpg", "images/Uppu14.jpg"]
   },
   { 
     date: "07/12/2023", 
     event: "Jignesh shadi - Surat", 
     icon: <FaGift size={20} />, 
-    images: ["images/marriage1.jpg", "images/marriage2.jpg", "images/marriage3.jpg", "images/marriage4.jpg"]
+    images: ["images/Jignesh.jpg", "images/Jignesh1.jpg"]
   },
   { 
     date: "02/02/2024", 
-    event: "War musium visit", 
-    icon: <FaCarAlt size={20} />, 
-    images: ["images/marriage1.jpg", "images/marriage2.jpg", "images/marriage3.jpg", "images/marriage4.jpg"]
+    event: "War museum visit", 
+    icon: <GiTank size={20} />, 
+    images: ["images/museum.jpg", "images/museum1.jpg"]
   },
   { 
     date: "11/02/2024", 
     event: "Bor nahan", 
-    icon: <FaBaby size={20} />, 
-    images: ["images/marriage1.jpg", "images/marriage2.jpg", "images/marriage3.jpg", "images/marriage4.jpg"]
+    icon: <FaBath size={20} />, 
+    images: ["images/bor.jpg"]
   },
   { 
     date: "13/03/2024", 
     event: "Maheshwar", 
     icon: <FaCarAlt size={20} />, 
-    images: ["images/marriage1.jpg", "images/marriage2.jpg", "images/marriage3.jpg", "images/marriage4.jpg"]
+    images: ["images/maheshwar5.jpg"]
   },
   { 
     date: "31/03/2024", 
     event: "Fifth wedding anniversay Indore", 
     icon: <FaRing size={20} />, 
-    images: ["images/marriage1.jpg", "images/marriage2.jpg", "images/marriage3.jpg", "images/marriage4.jpg"]
+    images: ["images/anniversay5_1.jpg", "images/anniversay5_2.jpg", "images/anniversay5_3.jpg"]
   },
   { 
     date: "20/05/2024", 
     event: "Gaurav's 31st birthday", 
     icon: <FaBirthdayCake size={20} />, 
-    images: ["images/marriage1.jpg", "images/marriage2.jpg", "images/marriage3.jpg", "images/marriage4.jpg"]
+    images: ["images/gp31.jpg", "images/gp311.jpg"]
   },
   { 
     date: "11/06/2024", 
     event: "Chetali's 27th birthday - Chandwad", 
     icon: <FaBirthdayCake size={20} />, 
-    images: ["images/marriage1.jpg", "images/marriage2.jpg", "images/marriage3.jpg", "images/marriage4.jpg"]
+    images: ["images/chetu27.jpg"]
   },
   { 
     date: "03/08/2024", 
     event: "Jupiter", 
     icon: <FaBiking size={20} />, 
-    images: ["images/marriage1.jpg", "images/marriage2.jpg", "images/marriage3.jpg", "images/marriage4.jpg"]
+    images: ["images/Jupiter.jpg", "images/Jupiter1.jpg"]
   },
   { 
     date: "15/08/2024", 
     event: "Celebration", 
     icon: <FaGift size={20} />, 
-    images: ["images/marriage1.jpg", "images/marriage2.jpg", "images/marriage3.jpg", "images/marriage4.jpg"]
+    images: ["images/Celebration.jpg", "images/Celebration1.jpg", "images/Celebration2.jpg"]
   },
   { 
     date: "15/10/2024", 
     event: "Surprise from Chennai", 
     icon: <FaPlaneDeparture size={20} />, 
-    images: ["images/marriage1.jpg", "images/marriage2.jpg", "images/marriage3.jpg", "images/marriage4.jpg"]
+    images: ["images/Surprise.jpg", "images/Surprise1.jpg"]
   },
   { 
     date: "19/10/2024", 
     event: "Trip to Narayanpur", 
-    icon: <FaGift size={20} />, 
-    images: ["images/marriage1.jpg", "images/marriage2.jpg", "images/marriage3.jpg", "images/marriage4.jpg"]
+    icon: <RiEBikeFill size={20} />, 
+    images: ["images/Narayanpur0.jpg", "images/Narayanpur.jpg", "images/Narayanpur1.jpg", "images/Narayanpur2.jpg",
+    "images/Narayanpur3.jpg", "images/Narayanpur4.jpg"]
   },
   { 
     date: "20/10/2024", 
     event: "Karva chauth", 
-    icon: <FaGift size={20} />, 
-    images: ["images/marriage1.jpg", "images/marriage2.jpg", "images/marriage3.jpg", "images/marriage4.jpg"]
+    icon: <FaHollyBerry size={20} />, 
+    images: ["images/Karva24.jpg", "images/Karva241.jpg", "images/Karva242.jpg"]
   },
   { 
     date: "01/11/2024", 
     event: "Diwali", 
     icon: <FaGift size={20} />, 
-    images: ["images/marriage1.jpg", "images/marriage2.jpg", "images/marriage3.jpg", "images/marriage4.jpg"]
+    images: ["images/diwali24.jpg"]
   },
   { 
     date: "23/11/2024", 
     event: "Ramdara trip", 
     icon: <FaBiking size={20} />, 
-    images: ["images/marriage1.jpg", "images/marriage2.jpg", "images/marriage3.jpg", "images/marriage4.jpg"]
+    images: ["images/Ramdara.webp"]
+  },
+  { 
+    date: "30/11/2024", 
+    event: "Upasna's second birthday", 
+    icon: <FaBiking size={20} />, 
+    images: ["images/Uppu2.jpg", "images/Uppu21.jpg"]
   },
   { 
     date: "13/12/2024", 
     event: "Maheshwar", 
     icon: <FaGift size={20} />, 
-    images: ["images/marriage1.jpg", "images/marriage2.jpg", "images/marriage3.jpg", "images/marriage4.jpg"]
+    images: ["images/maheshwar6.webp"]
   },
   { 
     date: "22/12/2024", 
     event: "Sarasbag", 
     icon: <FaGift size={20} />, 
-    images: ["images/marriage1.jpg", "images/marriage2.jpg", "images/marriage3.jpg", "images/marriage4.jpg"]
+    images: ["images/Sarasbag.jpg"]
   },
   { 
     date: "20/01/2025", 
     event: "New house in Pune", 
     icon: <FaHome size={20} />, 
-    images: ["images/marriage1.jpg", "images/marriage2.jpg", "images/marriage3.jpg", "images/marriage4.jpg"]
+    images: ["images/house.jpg", "images/house1.jpg", "images/house2.jpg", "images/house3.jpg", "images/house4.jpg", "images/house5.jpg"]
   },
   { 
     date: "02/02/2025", 
     event: "Maheshwar", 
     icon: <FaGift size={20} />, 
-    images: ["images/marriage1.jpg", "images/marriage2.jpg", "images/marriage3.jpg", "images/marriage4.jpg"]
+    images: ["images/Maheshwar7.jpg"]
   }
 ];
 
