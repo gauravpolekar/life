@@ -57,7 +57,8 @@ const timelineData = [
     date: "16/02/2019", 
     event: "Pre wedding shoot", 
     icon: <FaHandHoldingHeart size={20} />, 
-    images: ["images/preWedding.jpg", "images/preWedding1.jpg", "images/preWedding2.webp", "images/preWedding3.jpg", "images/preWedding4.jpg", "images/preWedding5.jpg" , "images/preWedding6.webp" , "images/preWedding7.jpg" ]
+    images: ["images/preWedding.JPG", "images/preWedding1.JPG", "images/preWedding2.webp", "images/preWedding3.JPG", "images/preWedding4.JPG", "images/preWedding5.JPG" , "images/preWedding6.webp" , 
+    "images/preWedding7.jpg" ]
   },
   { 
     date: "31/03/2019", 
@@ -77,15 +78,15 @@ const timelineData = [
     icon: <FaPlane size={20} />, 
     images: ["images/manali.jpg", "images/manali1.jpg", "images/manali2.jpg", "images/manali3.jpg",
     "images/manali4.jpg", "images/manali5.jpg", "images/manali6.jpg", "images/manali7.jpg",
-    "images/manali8.jpg", "images/manali9.jpg", "images/manali10.jpg", "images/manali11.jpg",
-    "images/manali12.jpg", "images/manali13.jpg", "images/manali14.jpg", "images/manali15.jpg"
+    "images/manali8.jpg", "images/manali9.jpg", "images/manali10.jpg", "images/manali11.webp",
+    "images/manali12.jpg", "images/manali13.jpg", "images/manali14.jpg", "images/manali15.JPG"
   ]
   },
   { 
     date: "20/05/2019", 
     event: "Gaurav's 27th birthday", 
     icon: <FaGift size={20} />, 
-    images: ["images/gp27.jpg", "images/gp271.jpg", "images/gp272.jpg", "images/gp273.jpg"]
+    images: ["images/gp27.jpg", "images/gp271.jpg", "images/gp272.webp", "images/gp273.jpg"]
   },
   { 
     date: "11/06/2019", 
@@ -139,7 +140,8 @@ const timelineData = [
     date: "13/01/2020", 
     event: "Post wedding shoot - Maheshwar", 
     icon: <FaCameraRetro size={20} />, 
-    images: ["images/postWeddingShoot.jpg", "images/postWeddingShoot1.jpg", "images/postWeddingShoot2.jpg", "images/postWeddingShoot3.jpg"]
+    images: ["images/postWeddingShoot.JPG", "images/postWeddingShoot1.JPG", "images/postWeddingShoot2.JPG",
+     "images/postWeddingShoot3.jpg"]
   },
   { 
     date: "31/01/2020", 
@@ -199,7 +201,7 @@ const timelineData = [
     date: "14/02/2021", 
     event: "Valentines day", 
     icon: <FaHeart size={20} />, 
-    images: ["images/IMG_20210214_183144396.jpg", "IMG_20210214_173817435.webp"]
+    images: ["images/IMG_20210214_183144396.jpg", "images/IMG_20210214_173817435.webp"]
   },
   { 
     date: "31/03/2021", 
@@ -218,7 +220,7 @@ const timelineData = [
     date: "30/11/2021", 
     event: "Maheshwar", 
     icon: <FaBus size={20} />, 
-    images: ["images/Maheshwar4.jpg", "images/Maheshwar41.jpg"]
+    images: ["images/Maheshwar4.JPG", "images/Maheshwar41.JPG"]
   },
   { 
     date: "09/01/2022", 
@@ -284,7 +286,7 @@ const timelineData = [
     date: "15/02/2023", 
     event: "Maheshwar Akshay shadi", 
     icon: <FaBus size={20} />, 
-    images: ["images/Akshay.jpg", "images/Akshay1.jpg"]
+    images: ["images/Akshay.JPG", "images/Akshay1.jpg"]
   },
   { 
     date: "24/03/2023", 
@@ -332,7 +334,7 @@ const timelineData = [
     date: "11/07/2023", 
     event: "Krishna photo shoot", 
     icon: <FaBaby size={20} />, 
-    images: ["images/Krishna.jpg", "images/Krishna1.jpg"]
+    images: ["images/Krishna.JPG", "images/Krishna1.jpg"]
   },
   { 
     date: "29/07/2023", 
